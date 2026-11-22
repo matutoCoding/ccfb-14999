@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>木版水印分版推演台</title>
+    <link rel="stylesheet" href="./src/styles/tokens.css" />
+    <link rel="stylesheet" href="./src/styles/app.css" />
+    <link rel="stylesheet" href="./src/styles/print.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-seal">印</span>
+          <div class="brand-text">
+            <strong>木版水印</strong>
+            <small>分版印制推演台</small>
+          </div>
+        </div>
+        <nav id="nav" class="nav"></nav>
+        <div class="sidebar-foot">
+          <button id="seed-btn" class="btn btn-ghost btn-block">载入示例画稿与色料库</button>
+        </div>
+      </aside>
+      <main id="view" class="view"></main>
+    </div>
+    <div id="toast-root" class="toast-root"></div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>

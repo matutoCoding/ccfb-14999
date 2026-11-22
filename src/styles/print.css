@@ -1,0 +1,31 @@
+/* 打印：只输出刻版图与工艺单，隐藏应用外壳 */
+@media print {
+  .sidebar,
+  .page-head .toolbar,
+  #toast-root {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .view {
+    padding: 0;
+  }
+
+  .card,
+  .panel {
+    box-shadow: none;
+    border-color: #ccc;
+    break-inside: avoid;
+  }
+
+  #plate-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .canvas-stage {
+    border: 1px solid #999;
+  }
+}

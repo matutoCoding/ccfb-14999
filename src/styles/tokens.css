@@ -1,0 +1,84 @@
+/* 设计令牌：8pt 间距、有限字阶、slate 中性色阶，主色克制使用 */
+:root {
+  /* 间距 4/8/12/16/24/32/48 */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+
+  /* 字阶 14/15/16/18/22/28 */
+  --fs-xs: 14px;
+  --fs-sm: 15px;
+  --fs-base: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 22px;
+  --fs-2xl: 28px;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+
+  /* 中性色 slate */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+
+  /* 宣纸质感底色 */
+  --paper: #f5efe2;
+  --paper-deep: #ebe3d2;
+  --ink: #2c2620;
+
+  /* 主色：朱砂印泥色，只用于主操作与选中态 */
+  --primary: #b23a33;
+  --primary-hover: #992f29;
+  --primary-soft: #f3e2e0;
+  --accent: #2f5d8a;
+
+  --bg: var(--slate-100);
+  --surface: #ffffff;
+  --border: var(--slate-200);
+  --text: var(--slate-800);
+  --text-muted: var(--slate-500);
+
+  /* 圆角三档 */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+
+  /* 阴影三级 */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 12px 32px rgba(15, 23, 42, 0.14);
+
+  /* 过渡 */
+  --t-fast: 0.15s ease;
+  --t: 0.2s ease;
+
+  --sidebar-w: 224px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181f;
+    --surface: #1c222c;
+    --border: #2a3340;
+    --text: #e2e8f0;
+    --text-muted: #8b97a7;
+    --paper: #23201a;
+    --paper-deep: #1b1813;
+    --ink: #e8e0d0;
+    --primary-soft: #3a2322;
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+  }
+}
